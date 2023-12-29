@@ -2,7 +2,7 @@
 
 # Set the port number.
 set port = 4100
-set basedir = /mnt/c/dev/git-repos/ResortMUD
+set basedir = /ResortMUD
 set email = "ucmm@localhost"
 
 if ( "$1" != "" ) set port="$1"
