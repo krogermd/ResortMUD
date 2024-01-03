@@ -942,7 +942,7 @@ void do_goto( CHAR_DATA * ch, char *argument )
    AREA_DATA *pArea;
    int vnum;
    char buf[MAX_STRING_LENGTH];
-   char buf2[20];
+   char buf2[MAX_STRING_LENGTH];
 
    one_argument( argument, arg );
    if( arg[0] == '\0' )
