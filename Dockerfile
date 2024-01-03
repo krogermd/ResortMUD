@@ -30,6 +30,7 @@ RUN apt-get -y update
 RUN apt-get install -y csh
 RUN apt-get install -y net-tools
 RUN apt-get install -y telnet
+RUN apt-get install -y gdb
 
 run mkdir /ResortMUD
 
