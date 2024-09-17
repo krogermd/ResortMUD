@@ -660,9 +660,9 @@ void do_score( CHAR_DATA * ch, char *argument )
          pager_printf( ch, "&CIMMORTAL DATA:  &wWizinvis &C[&W%s&C]  &wInvlevel &C[&W%d&C]\r\n",
                        xIS_SET( ch->act, PLR_WIZINVIS ) ? "*" : " ", ch->pcdata->wizinvis );
 
-      if( ch->pcdata->bamfout )
+      if( ch->pcdata->bamfin )
          pager_printf( ch, "&CBamfin:  &Y%s%s\r\n", ( ( ch->pcdata->bamfin[0] != '\0' ) ? "" : ch->name ),
-                       ( ch->pcdata->bamfin[0] != '\0' ) ? ch->pcdata->bamfout : " appears in a swirling mist." );
+                       ( ch->pcdata->bamfin[0] != '\0' ) ? ch->pcdata->bamfin : " appears in a swirling mist." );
       if( ch->pcdata->bamfout )
          pager_printf( ch, "&CBamfout: &Y%s%s\r\n", ( ( ch->pcdata->bamfout[0] != '\0' ) ? "" : ch->name ),
                        ( ch->pcdata->bamfout[0] != '\0' ) ? ch->pcdata->bamfout : " leaves in a swirling mist." );
